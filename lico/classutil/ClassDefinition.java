@@ -2,9 +2,23 @@ package lico.classutil;
 
 import java.util.HashSet;
 
+/**
+ *
+ * @author lico
+ */
 public class ClassDefinition {
+
+    /**
+     * 唯一ID
+     */
     public Integer id;
+    /**
+     * 包名
+     */
     public String packageName;
+    /**
+     *
+     */
     public HashSet<String> importNames;
     public String permission = "public";
     public String className;
@@ -19,6 +33,10 @@ public class ClassDefinition {
     public HashSet<ClassAttribute> classAttributes;
     public HashSet<ClassMethod> classMethods;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
